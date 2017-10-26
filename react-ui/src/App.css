@@ -8,8 +8,9 @@
 }
 
 .App-image {
- width: 180px; 
- height: 280px;
+ animation: App-logo-spin infinite 20s linear;
+ width: 280px; 
+ height: 120px;
 }
 
 .App-header {
