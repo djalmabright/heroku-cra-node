@@ -11,8 +11,6 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 app.get('/api', function (req, res) {
   res.set('Content-Type', 'application/json');
   res.send('{"message":"Hello from my custom server!"}');
-res.write('');  
-res.end();  
 });
 
 
