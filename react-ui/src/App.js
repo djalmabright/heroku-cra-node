@@ -50,7 +50,8 @@ class App extends Component {
           {this.state.fetching
             ? 'Fetching message from API'
             : this.state.message}
-        </p>
+        </p> 
+         <img src={image} className="App-image" alt="image" />
       </div>
     );
   }
