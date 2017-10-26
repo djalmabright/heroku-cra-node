@@ -11,7 +11,13 @@ app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
 app.get('/api', function (req, res) {
   res.set('Content-Type', 'application/json');
   res.send('{"message":"Hello from my custom server!"}');
-  res.send('{"message":"Browse my React demos in the link above!"}');
+response.writeHead(200, { 'Content-Type': 'text/html' });  
+response.write('<!DOCTYPE html><html lang="en"><head>');  
+response.write('<meta charset="utf-8">');  
+response.write('</head><body>');  
+response.write('<h1>Vai Brasil</h1>');  
+response.write('</body></html>');  
+response.end();  
 });
 
 
