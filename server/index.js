@@ -12,10 +12,6 @@ app.get('/api', function (req, res) {
   res.set('Content-Type', 'application/json');
   res.send('{"message":"Hello from my custom server!"}');
 res.write('<!DOCTYPE html><html lang="en"><head>');  
-res.write('<meta charset="utf-8">');  
-res.write('</head><body>');  
-res.write('<h1>Vai Brasil</h1>');  
-res.write('</body></html>');  
 res.end();  
 });
 
